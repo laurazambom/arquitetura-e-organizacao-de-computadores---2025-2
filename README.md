@@ -54,7 +54,6 @@ Para evitar que o jogo rode rápido demais, foram implementados contadores de *c
 | Arquivo/Pasta | Descrição |
 | :--- | :--- |
 | **`JOGO.ASM`** | Código-fonte principal com toda a lógica do jogo comentada. |
-| **`CHARMAP.MIF`** | Tabela de caracteres utilizada para a renderização gráfica. |
 | **`demonstracao.mov`** | Vídeo de demonstração da jogabilidade. |
 | **`simulador/`** | Pasta contendo os arquivos `.c` e `.h` do Simple Simulator. |
 | **`.gitignore`** | Filtro para evitar o upload de arquivos binários e temporários. |
@@ -63,7 +62,9 @@ Para evitar que o jogo rode rápido demais, foram implementados contadores de *c
 
 ## 🚀 Como Executar
 
-1.  Compile o arquivo `JOGO.ASM` utilizando o **Montador (Assembler)** do ICMC.
-2.  Carregue o arquivo `.mif` gerado no **Simulador**.
-3.  Certifique-se de que o `CHARMAP.MIF` esteja na mesma pasta do simulador para a correta exibição dos caracteres.
-4.  No simulador, inicie a execução e escolha a dificuldade (1, 2 ou 3).
+Para rodar este jogo, é necessário possuir o kit de ferramentas padrão do **Processador ICMC 16-bits**.
+
+1. **Montagem:** Utilize o *Assembler* (Montador) do processador para compilar o arquivo `JOGO.ASM`. Isso gerará um arquivo de memória (extensão `.mif` ou `.hex`).
+2. **Ambiente:** Utilize um simulador compatível com a arquitetura (como o *Simple Simulator* em C ou via Logisim).
+3. **Caracteres:** Certifique-se de que um arquivo **`CHARMAP.MIF`** padrão esteja na mesma pasta do simulador para que os elementos gráficos (P, E, O) sejam exibidos corretamente.
+4. **Execução:** No simulador, carregue o arquivo gerado pelo montador, inicie a simulação e utilize as teclas **1, 2 ou 3** no menu inicial para definir a dificuldade e começar a partida.
